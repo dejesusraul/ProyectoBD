@@ -1,6 +1,6 @@
-package estruct.model;
+package estruct.services;
 
-public class Elector {
+public class Elector_Services {
     private String nombreApellido;
     private String fechaNacimiento;
     private String Direccion;
@@ -15,7 +15,7 @@ public class Elector {
         this.voto = voto;
     }
 
-    public Elector(String nombreApell, String fechaNacimiento, String Direccion, int NumConsc,String voto) {
+    public Elector_Services(String nombreApell, String fechaNacimiento, String Direccion, int NumConsc,String voto) {
         setNombreApellido(nombreApell);
         setFechaNacimiento(fechaNacimiento);
         setDireccion(Direccion);

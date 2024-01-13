@@ -1,6 +1,6 @@
-package estruct.model;
+package estruct.services;
 
-public class Parte {
+public class Parte_Services {
     private String NumPart;
     private String HoraFecha;
     private int CantidElectVoto;
@@ -8,7 +8,7 @@ public class Parte {
     private int CantElectAdd;
     private int CantTotElect;
 
-    public Parte(String numPart,String HoraFecha,int cantElectVoto,int CantElectElim,int cantElectAdd,int CantiTotElect){
+    public Parte_Services(String numPart,String HoraFecha,int cantElectVoto,int CantElectElim,int cantElectAdd,int CantiTotElect){
     this.NumPart=numPart;
     this.HoraFecha=HoraFecha;
     this.CantidElectVoto=cantElectVoto;

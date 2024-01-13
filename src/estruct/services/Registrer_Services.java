@@ -1,10 +1,10 @@
-package estruct.model;
+package estruct.services;
 
-public abstract class Registrer {
+public abstract class Registrer_Services {
     protected String codig;
     protected String name;
 
-    public Registrer(String codigo, String name) {
+    public Registrer_Services(String codigo, String name) {
         this.codig = codigo;
         this.name = name;
     }
