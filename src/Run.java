@@ -1,10 +1,9 @@
-import estruct.visual.Login;
+import estruct.visual.login;
 
-
-public class Main {
+public class Run {
     public static void main(String[] args) {
         
-    	Login ventana1 = new Login();
+    	login ventana1 = new login();
 		ventana1.setVisible(true);
      
         }

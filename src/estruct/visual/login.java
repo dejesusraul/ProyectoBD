@@ -17,7 +17,7 @@ import java.awt.Label;
 import java.awt.Font;
 import java.awt.Color;
 
-public class Login extends JFrame {
+public class login extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textFieldUserPass;
@@ -26,7 +26,7 @@ public class Login extends JFrame {
 	
 
 	
-	public Login() {
+	public login() {
 		setTitle("Login");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 497, 412);
