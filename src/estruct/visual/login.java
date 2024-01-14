@@ -1,24 +1,17 @@
 package estruct.visual;
 
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
 import javax.swing.ImageIcon;
-
-import java.awt.Label;
 import java.awt.Font;
 import java.awt.Color;
 import java.awt.Toolkit;
-
 import javax.swing.JPasswordField;
 
 public class login extends JFrame {
