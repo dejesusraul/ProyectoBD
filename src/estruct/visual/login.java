@@ -1,10 +1,8 @@
 package estruct.visual;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import javax.swing.JInternalFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
@@ -28,7 +26,7 @@ public class login extends JFrame {
 	private JPanel contentPane;
 	private JPasswordField textFieldUserPass;
 	private JTextField textFieldUsserName;
-	JLabel LblError = new JLabel("New label");
+	JLabel LblError = new JLabel("error");
 	
 
 	
@@ -42,7 +40,7 @@ public class login extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnNewButton = new JButton("Acept");
+		JButton btnNewButton = new JButton("Aceptar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(!Verificy()) {
@@ -77,7 +75,7 @@ public class login extends JFrame {
 		contentPane.add(textFieldUserPass);
 		textFieldUserPass.setColumns(10);
 		
-		JLabel lblNewLabel = new JLabel("Introducing Pass");
+		JLabel lblNewLabel = new JLabel("Contrase\u00F1a");
 		lblNewLabel.setBackground(Color.WHITE);
 		lblNewLabel.setForeground(Color.BLACK);
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 11));
@@ -89,7 +87,7 @@ public class login extends JFrame {
 		contentPane.add(textFieldUsserName);
 		textFieldUsserName.setColumns(10);
 		
-		JLabel lblNewLabel_1 = new JLabel("Introducing Name");
+		JLabel lblNewLabel_1 = new JLabel("Nombre");
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblNewLabel_1.setBounds(247, 69, 202, 14);
 		contentPane.add(lblNewLabel_1);

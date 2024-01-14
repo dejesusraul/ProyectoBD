@@ -12,6 +12,11 @@ import javax.swing.JScrollPane;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
+import java.awt.Font;
+import java.awt.Toolkit;
 
 public class Principal extends JFrame {
 
@@ -20,6 +25,7 @@ public class Principal extends JFrame {
 
 	
 	public Principal() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Principal.class.getResource("/img/votacion.png")));
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 625, 496);
 		contentPane = new JPanel();
@@ -28,11 +34,20 @@ public class Principal extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
+		panel.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panel.setBackground(new Color(255, 255, 255));
 		panel.setBounds(0, 0, 143, 457);
 		contentPane.add(panel);
+		panel.setLayout(null);
 		
 		JButton BtnReport = new JButton("Report");
+		BtnReport.setBounds(10, 45, 123, 23);
 		panel.add(BtnReport);
+		
+		JLabel lblNewJgoodiesTitle = DefaultComponentFactory.getInstance().createTitle("Reportes");
+		lblNewJgoodiesTitle.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
+		lblNewJgoodiesTitle.setBounds(36, 11, 69, 23);
+		panel.add(lblNewJgoodiesTitle);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(142, 0, 467, 457);
@@ -86,7 +101,6 @@ public class Principal extends JFrame {
 				"New column", "New column", "New column", "New column", "New column", "New column"
 			}
 		));
-		table.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		scrollPane.setViewportView(table);
 	}
 }
