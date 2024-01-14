@@ -40,10 +40,10 @@ public class Principal extends JFrame {
 		BtnReport.setBounds(10, 45, 123, 23);
 		panel.add(BtnReport);
 		
-		JLabel lblNewJgoodiesTitle = DefaultComponentFactory.getInstance().createTitle("Reportes");
-		lblNewJgoodiesTitle.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
-		lblNewJgoodiesTitle.setBounds(36, 11, 69, 23);
-		panel.add(lblNewJgoodiesTitle);
+		JLabel lblNewLabelTitulo = new JLabel("Reportes");
+		lblNewLabelTitulo.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
+		lblNewLabelTitulo.setBounds(40, 11, 63, 17);
+		panel.add(lblNewLabelTitulo);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(142, 0, 467, 457);
