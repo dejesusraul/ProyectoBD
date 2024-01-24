@@ -7,16 +7,22 @@ import javax.swing.JButton;
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
 import javax.swing.border.LineBorder;
+
 import java.awt.Color;
+
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JLabel;
-import com.jgoodies.forms.factories.DefaultComponentFactory;
+
 import java.awt.Font;
 import java.awt.Toolkit;
+
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
+import java.awt.Insets;
+
+@SuppressWarnings("serial")
 public class Principal extends JFrame {
 
 	private JPanel contentPane;
@@ -24,11 +30,14 @@ public class Principal extends JFrame {
 
 	
 	public Principal() {
+		
 		setIconImage(Toolkit.getDefaultToolkit().getImage(Principal.class.getResource("/img/votacion.png")));
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 625, 496);
 		
 		JMenuBar menuBar = new JMenuBar();
+		menuBar.setBackground(Color.WHITE);
+		menuBar.setMargin(new Insets(1, 1, 1, 1));
 		setJMenuBar(menuBar);
 		
 		JMenu mnNewMenu = new JMenu("Usuarios");
@@ -74,7 +83,7 @@ public class Principal extends JFrame {
 		panel.add(btnReporte);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(142, 0, 467, 457);
+		scrollPane.setBounds(142, 0, 467, 436);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
